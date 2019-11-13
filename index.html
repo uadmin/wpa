@@ -3,13 +3,13 @@
 	<head>
 		<title>BMI Calculator</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16x16.png">
-		<link rel="icon" type="image/png" sizes="192x192" href="/static/img/favicon-192x192.png">
-		<link rel="icon" type="image/png" sizes="512x512" href="/static/img/favicon-512x512.png">
-		<link rel="manifest" href="/static/img/site.webmanifest">
-		<link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="/wpa/static/img/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/wpa/static/img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/wpa/static/img/favicon-16x16.png">
+		<link rel="icon" type="image/png" sizes="192x192" href="/wpa/static/img/favicon-192x192.png">
+		<link rel="icon" type="image/png" sizes="512x512" href="/wpa/static/img/favicon-512x512.png">
+		<link rel="manifest" href="/wpa/static/img/site.webmanifest">
+		<link rel="stylesheet" href="/wpa/static/bootstrap/css/bootstrap.min.css">
 	</head>
 	<body>
 		<div class="container-fluid">
@@ -35,8 +35,8 @@
 				</div>
 			</div>
 		</div>
-		<script src="/static/jquery-3.4.1.min.js"></script>
-		<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/wpa/static/jquery-3.4.1.min.js"></script>
+		<script src="/wpa/static/bootstrap/js/bootstrap.min.js"></script>
 		<script>
 			var ranges = {
 				18.5: "Underweight",
@@ -86,7 +86,7 @@
 
 			if ('serviceWorker' in navigator) {
 				window.addEventListener('load', function() {
-					navigator.serviceWorker.register('/sw.js').then(function(registration) {
+					navigator.serviceWorker.register('/wpa/sw.js').then(function(registration) {
 						// Registration was successful
 						console.log('ServiceWorker registration successful with scope: ', registration.scope);
 				}, function(err) {
